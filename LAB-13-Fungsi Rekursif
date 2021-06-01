@@ -1,0 +1,26 @@
+# 71200595 Gerry Sunjay Junjung
+# Adik Rian yang sedang mengerjakan PR Matematika kebingungan untuk mengerjakan soal sebagai berikut:
+# Cari angka apa saja dari 1 sampai 100 jika dikalikan maka hasilnya:
+# A. 96
+# B. 48
+# C. 11
+# D. 69
+# E. 72
+# Rian sebagai orang biasa yang tak mengerti apa apa, meminta tolong kepada saya untuk membuat program 
+# agar bisa mengerjakannya
+def carihasil(data,cari):
+    kali = []
+    for i in range(len(data)):
+        for j in range(1,len(data)):
+            if i*j != cari:
+                next
+            elif i * j == cari:
+                perkalian = (i,j)
+                kali.append(perkalian)
+    print ('Angka dari ',cari,' merupakan hasil kali dari =',end='')
+    return kali
+data = []
+for angka in range(1,101,+1):
+    data.append(angka)
+cari = int(input('Masukkan Angka Yang Ingin anda cari perkaliannya : '))
+print(carihasil(data,cari))
